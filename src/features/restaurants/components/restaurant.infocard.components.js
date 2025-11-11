@@ -1,7 +1,9 @@
 import React from "react";
+import { View } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { Spacer } from"../../../Components/spacer/spacer.component";
-import  {Text} from "../../../Components/typography/text.component"
+import  {Text} from "../../../Components/typography/text.component";
+import { Favourite } from "../../../Components/favourites/favourite.comoponent";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
 
@@ -20,7 +22,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restaurant",
     icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-    photos = ["https://picsum.photos/400/300"
+    photos = ["https://www.themealdb.com/images/media/meals/e756bf1761848342.jpg"
 ,],
     address = "100 some random street",
     isOpenNow = true,
@@ -33,8 +35,10 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 
   return (
      <RestaurantCard elevation={5}>
-    <RestaurantCardCover   source={{ uri: photos[0]}}
-     resizeMode="cover" style={{ width: "100%", height:100 }} />
+    <View>
+        <Favourite restaurant={restaurant} />
+        <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
+      </View>
       <Info >
         <Text variant="label">{name}</Text>
         <Section>

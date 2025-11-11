@@ -11,9 +11,21 @@ export const mocks = {
 };
 
 export const mockImages = [
-"https://picsum.photos/400/300",
-"https://picsum.photos/400/301",
-"https://picsum.photos/400/302",
-"https://picsum.photos/400/304",
-"https://picsum.photos/400/305",
+ "https://www.themealdb.com/images/media/meals/e756bf1761848342.jpg",
+"https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg",
+"https://www.themealdb.com/images/ingredients/lemon.png",
+"https://www.themealdb.com/images/media/meals/kw92t41604181871.jpg",
+"https://www.themealdb.com/images/media/meals/4i5cnx1587672171.jpg",
+"https://www.themealdb.com/images/media/meals/vytypy1511883765.jpg",
+"https://www.themealdb.com/images/media/meals/wsu0rc1761848482.jpg",
+"https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg"
+
+
+
+
+
+
+
+
+
 ];

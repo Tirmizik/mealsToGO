@@ -1,8 +1,7 @@
 import React from "react";
-import styled from "styled-components/native";
-import { CompactRestaurantInfo } from "../../../Components/restaurant/compact-restaurant-info.component";
-
-const MyText = styled.Text``;
+import { CompactRestaurantInfo } from "../../../Components/restaurant/compact-restaurant-info.component"
 export const MapCallout = ({ restaurant }) => (
-   <CompactRestaurantInfo restaurant={restaurant} />
+ <CompactRestaurantInfo isMap restaurant={restaurant} />
 );
+
+
